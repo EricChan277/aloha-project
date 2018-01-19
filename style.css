@@ -95,25 +95,45 @@
     font-weight: normal;
     font-style: normal;
   }
-  li,
-  body p{
-    font-family: Raleway; 
+
+  nav li {
+    font-family: Raleway;
+    color: #e2574c;
+    font-size: 16px;
+
+
+  }
+  
+  p{
+    font-family: Raleway;
+     font-size: 16px;
   }
 
-  .heading{
+  footer p{
+    font-family: Raleway;
+    color: white;
+    font-size: 16px;
+  }
+  
+
+  .headers{
     font-family: Playfair Display;
+    font-size: 32px;
   }
 
+  h3{
+    color:#e2574c; 
+  }
 /*Nav bar */
 
   nav {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .nav-box {
     display: flex;
     flex-direction: row;
-    background-color: yellow;
+    /* background-color: yellow; */
     top: 0;
     align-items: center;
     height: 15%;
@@ -124,6 +144,8 @@
     align-items: flex-start;
     max-width: 100px;
     max-height: auto;
+    margin-left: 30px;
+    order: 0;
   }
 
   h1 {
@@ -131,28 +153,22 @@
     position: absolute;
   }
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white;
-  }
 
-  
 
   .nav-thing {
     display: flex;
     height: auto;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
-    
   }
+
   .nav-bar {
     display: inline-flex;
     flex-direction: row;
     padding: 0;
   }
+
   .nav-bar li {
     display: inline-flex;
     flex-direction: row;
@@ -161,45 +177,44 @@
     position: relative;
   }
 
-
   .cart {
     max-width: 50px;
     max-height: auto;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-right: 30px;
 
   }
-
 
 
 /*Banner*/
   .spring-summer {
     display: flex;
     background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(to bottom, rgba(24,24,24,0.2), rgba(24,24,24,0.2)),
     url("./images/banner-girl.png") center bottom no-repeat ,
     url("./images/flower-bkgd.jpg") center center no-repeat; 
-    background-size: cover, contain, cover;
-    height: 600px;
-    max-height: 50%;
+    background-size: cover, contain, contain;
+    /* min-height: 600px; */
+    max-height: 50vh;
     width: 100%;
     color: white;
     justify-content: center;
+    opacity: 1;
+    align-self: center;
     
   }
+  .banner-text {
+    color: white;
 
-
-  .spring-summer p {
-    opacity: 1;
   }
-
-
 
   .collection {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: white;
   }
 
 
@@ -208,15 +223,36 @@
     max-height: 200px;
     max-width: auto;
   }
+
+  /*Info*/
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 0 25%;
+    text-align: center;
+    margin: 25px 0;
+  }
 /*Shop*/
   .flex-clothes {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: red;
     width: 100%;
     height: 400px;
+    align-items: center;
+    justify-content: center;
   }
 
   .mens {
@@ -231,7 +267,10 @@
     justify-content: center;
     align-items: center;
     color: white;
-    flex-shrink: 2;
+    margin: 0px 5px 5px 5px;
+    margin-left: 0px;
+
+    /* flex-shrink: 2; */
   }
 
   .trends {
@@ -246,6 +285,7 @@
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 0px 5px 5px 5px;
   }
 
   .glasses {
@@ -260,6 +300,8 @@
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 5px 0 5px 5px;
+    margin-right: 0px;
   }
 
   .sale {
@@ -274,6 +316,9 @@
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 5px 5px 0 0;
+    margin-left: 0px;
+
   }
 
   .bags {
@@ -288,6 +333,7 @@
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 5px;
   }
 
   .womens {
@@ -296,13 +342,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 400px;
+    height: 48%;
     width: 48%;
     max-width: 48%;
     justify-content: center;
     align-items: center;
     color: white;
-    flex-shrink: 2;
+    margin: 5px 5px 0 0;
+    margin-right: 0px;
+
+    /* flex-shrink: 2; */
   }
 
 
@@ -337,9 +386,10 @@
     background-size: cover;
     height: 22.5rem;
     color: black;
-    margin: 0.57 auto;
+    margin: auto;
     align-self: center;
     flex-direction: column;
+    padding: 50px;
   }
 
   .updates h2 {
@@ -355,15 +405,16 @@
   }
 /*misc*/
   a:link {
-    color: red;
+    color: #e2574c;
+    text-decoration: none;
   }
 
   a:visited {
-    color: yellow;
+    color: #e2574c;
   }
 
   a:hover {
-    color: purple;
+    color: #b64036;
   }
 
   ul {
@@ -371,7 +422,7 @@
   }
   
   body {
-    background-color: blue;
+    /* background-color: blue; */
     padding: 0;
     margin: 0;
   }
@@ -385,6 +436,11 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+  }
+
+  footer p,
+  footer ul, {
+    color: white;
   }
 
   .socials {

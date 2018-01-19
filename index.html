@@ -8,8 +8,9 @@
 
     <link rel="reset" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
-    <script src="https://use.fontawesome.com/833a98f580.js"></script>
-
+    <link rel="stylesheet" href="./javaScript/flickity.css">
+    <script src="https://use.fontawesome.com/833a98f580.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <title>Aloha</title>
 
   </head>
@@ -24,10 +25,10 @@
     <img class="logo" src="./images/aloha-logo.svg">
     <div class="nav-thing">
       <ul class="nav-bar">
-        <li>ABOUT</li>
-        <li>SHOP</li>
-        <li>FEATURED</li>
-        <li>UPDATES</li>
+        <a href="#about"> <li> ABOUT </li> </a>
+        <a href="#shop">  <li> SHOP </li> </a>
+        <a href="#featured"><li>FEATURED</li> </a>
+        <a href="#updates"><li>UPDATES</li> </a>
       </ul>
     </div>
 
@@ -39,21 +40,21 @@
 <!-- Banner -->
   <section class="spring-summer">
     <div class="collection">
-      <p>New Collection</p>
-      <p>Spring/Summer 2017</p>
+      <p class="banner-text">NEW COLLECTION</p>
+      <p class="headers">Spring/Summer 2016</p>
     </div>
   </section>
 
 <!-- Info -->
-  <section class="container">
-    <h2>Hand-Crafted Styles</h2>
+  <section class="about" id="about">
+    <p class="headers"><i>Hand-Crafted</i> Styles</p>
     <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up
       for updates below.
     </p>
   </section>
 
 <!-- Shop -->
-  <section class="flex-clothes">
+  <section class="flex-clothes" id="shop">
     <p class="mens">MENS</p>
     <p class="trends">TRENDS</p>
     <p class="glasses">GLASSES</p>
@@ -63,8 +64,8 @@
   </section>
 
 <!-- Featured -->
-  <section class="container">
-    <h2>Most Loved Products</h2>
+  <section class="container" id="featured">
+    <h2><em>Most Loved</em> Products</h2>
 
     <ul class="carasol-list">
       <li class="carasol">
@@ -98,7 +99,7 @@
   </section>
 
 <!-- Updates -->
-  <section class="updates">
+  <section class="updates" id="updates">
     <div>
       <h2>Sign-Up for Updates</h2>
       <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
@@ -107,9 +108,7 @@
   </section>
 
 <!-- Footer -->
-  
-  <script src="./javaScript/script.js"></script>
-  </body>
+
   
   <footer class="footer">
     <section class="bottom-left">
@@ -155,6 +154,9 @@
       </ul>
     </socials>
   </footer>
+  <script src="./javaScript/flickityPkgdMin.js"></script>
+  <script src="./javaScript/script.js"></script>
+  </body>
   
 
   </html>
