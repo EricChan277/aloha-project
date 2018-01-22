@@ -13,6 +13,7 @@ http://flickity.metafizzy.co
   position: relative;
   height: 100%;
 }
+/* @media all  */
 
 .flickity-slider {
   position: absolute;

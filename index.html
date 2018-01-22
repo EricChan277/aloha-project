@@ -8,8 +8,9 @@
 
     <link rel="reset" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./javaScript/flickity.css">
-    <script src="https://use.fontawesome.com/833a98f580.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./flickity.css">
+    <script src="https://use.fontawesome.com/833a98f580.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <title>Aloha</title>
 
@@ -64,46 +65,81 @@
   </section>
 
 <!-- Featured -->
-  <section class="container" id="featured">
-    <h2><em>Most Loved</em> Products</h2>
+  <section id="featured" class="carasol">
+    <h2 class="headers"><em>Most Loved</em> Products</h2>
 
-    <ul class="carasol-list">
-      <li class="carasol">
-        <img class="carasol-pics" src="./images/stretch-knit-dress.jpg">
-        <p>Dresses</p>
-        <h3>Stretch Knit Dress</h3>
-        <p>$169.00</p>
-      </li>
+      <div class="main-carousel">
+        <div class="carousel-cell">          
+            <img class="carasol-pics" src="./images/stretch-knit-dress.jpg">
+            <p>Dresses</p>
+            <h3>Stretch Knit Dress</h3>
+            <p>$169.00</p> 
+        </div>
+         
+        <div class="carousel-cell">          
+            <img class="carasol-pics" src="./images/cotton-blue-shirt.jpg">
+            <p>SHIRTS</p>
+            <h3>Cotton Blue Shirt</h3>
+            <p>$89.00</p>
+        </div>
 
-      <li class="carasol">
-        <img class="carasol-pics" src="./images/cotton-blue-shirt.jpg">
-        <p>Shirts</p>
-        <h3>Cotton Blue Shirt</h3>
-        <p>$89.00</p>
-      </li>
+        <div class="carousel-cell">          
+            <img class="carasol-pics" src="./images/checked-stretch-dress.jpg">
+            <p>DRESSES</p>
+            <h3>Checked Stretch Dress</h3>
+            <p>$129.00</p>
+        </div>
 
-      <li class="carasol">
-        <img class="carasol-pics" src="./images/checked-stretch-dress.jpg">
-        <p>Dresses</p>
-        <h3>Checked Stretch Dress</h3>
-        <p>$129.00</p>
-      </li>
+        <div class="carousel-cell">          
+            <img class="carasol-pics" src="./images/blue-hipster-backpack.jpg">
+            <p>BAGS</p>
+            <h3>Blue Hipster Backpack</h3>
+            <p>$69.00</p>
+        </div>
 
-      <li class="carasol">
-        <img class="carasol-pics" src="./images/blue-hipster-backpack.jpg">
-        <p>Bags</p>
-        <h3>Blue Hipster Backpack</h3>
-        <p>$69.00</p>
-      </li>
-    </ul>
+        <div class="carousel-cell">          
+          <img class="carasol-pics" src="./images/demin-overall-shorts.jpg">
+          <p>DENIM</p>
+          <h3>Denim Overalls</h3>
+          <p>$89.00</p>
+        </div>
+    
+      <div class="carousel-cell">          
+        <img class="carasol-pics" src="./images/pink-dotted-dress.jpg">
+        <p>DRESSES</p>
+        <h3>Pink Dotted Dress</h3>
+        <p>$99.00</p>
+      </div>
+
+      <div class="carousel-cell">          
+        <img class="carasol-pics" src="./images/blue-silk-dress.jpg">
+        <p>DRESSES</p>
+        <h3>Blue Silk Dress</h3>
+        <p>$119.00</p>
+      </div>
+
+      <div class="carousel-cell">          
+        <img class="carasol-pics" src="./images/cotton-yellow-tshirt.jpg">
+        <p>SHIRTS</p>
+        <h3>Cotton Yellow Tshirt</h3>
+        <p>$39.00</p>
+      </div>
   </section>
 
 <!-- Updates -->
   <section class="updates" id="updates">
-    <div>
+    <div class="updates-div">
       <h2>Sign-Up for Updates</h2>
       <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
         our blog. Unsubscribe at any time.</p>
+  
+      <form >
+        <div class="form-div">
+          <input type="email" name="email" class="email" id="email" value placeholder="Input email here"> 
+          <input type="submit"  class="button-submit" name="submit-btn" value="Submit">
+        </div>
+      </form>
+        
     </div>
   </section>
 
@@ -117,8 +153,10 @@
         <br/>Powered by HTML and CSS.
         <br/>
         <br/> 604-604-6040.
-        <a href="info@alohaapparel.com" target: "_blank">info@alohaapparel.com</a>
+        <a href="info@alohaapparel.com" target= "_blank">info@alohaapparel.com</a>
         <br/>
+      </p>
+      <p class="address">
         <br/> 1490 W Broadway
         <br/> Vancouver, BC, Canada
       </p>
@@ -128,27 +166,27 @@
       <ul>
         <li>
           <i class="fa fa-facebook" aria-hidden="true"></i>
-          <a href="https://facebook.com"> Facebook</a>
+          <a href="https://facebook.com" target="_blank"> Facebook</a>
           <br />
         </li>
         <li>
           <i class="fa fa-twitter" aria-hidden="true"></i>
-          <a href="https://twitter.com"> Twitter</a>
+          <a href="https://twitter.com" target="_blank"> Twitter</a>
           <br />
         </li>
         <li>
           <i class="fa fa-instagram" aria-hidden="true"></i>
-          <a href="https://instagram.com"> Instagram</a>
+          <a href="https://instagram.com" target="_blank"> Instagram</a>
           <br />
         </li>
         <li>
           <i class="fa fa-pinterest" aria-hidden="true"></i>
-          <a href="https://pinterest.com"> Pinterest</a>
+          <a href="https://pinterest.com" target="_blank"> Pinterest</a>
           <br />
         </li>
         <li>
           <i class="fa fa-google-plus" aria-hidden="true"></i>
-          <a href="https://plus.google.com"> Google+</a>
+          <a href="https://plus.google.com" target="_blank"> Google+</a>
           <br />
         </li>
       </ul>
