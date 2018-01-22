@@ -127,9 +127,9 @@
   }
 /*Nav bar */
 
-  nav {
-    justify-content: space-between;
-  }
+  /* nav {
+    justify-content: center;
+  } */
 
   .nav-box {
     display: flex;
@@ -137,15 +137,18 @@
     /* background-color: yellow; */
     top: 0;
     align-items: center;
-    height: 15%;
+    height: 150px;
     width: 100%;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
    }
    
   .logo {
     align-items: flex-start;
-    max-width: 100px;
-    max-height: auto;
-    margin-left: 30px;
+    max-height: 100%;
+    /* min-width: 25%; */
+    max-width: 25%;
     order: 0;
   }
 
@@ -156,12 +159,20 @@
 
 
 
-  .nav-thing {
-    display: flex;
+  .nav-buttons {
+    border-top: solid 1px black;
+   
     height: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row; */
+    order: 3;
+
   }
 
   .nav-bar {
@@ -171,8 +182,12 @@
   }
 
   .nav-bar li {
-     display: flex;
-     justify-content: space-between;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 0px;
   }
 
   .cart {
@@ -180,7 +195,7 @@
     max-height: auto;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 30px;
+    order: 1;
 
   }
 
@@ -497,3 +512,35 @@
   .address {
     color: #969696;
   }
+/* Media Queries */
+  @media screen and (min-width: 600px) {
+     
+    .nav-box  { 
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+    .logo {
+      order: 0;
+    }
+
+    .nav-buttons  {
+      display: flex;
+      order: 1;
+      border-top: none;
+      justify-content: center;
+      align-items: center;
+      }
+  
+    .cart {
+      order: 2;
+
+      }
+  
+  }
+    
+ 
+ @media screen and (min-width: 1240px) {
+
+ }
+    
