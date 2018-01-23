@@ -45,11 +45,11 @@ $('.main-carousel').flickity({
   autoPlay: true
 });
 
-$("#email").on("submit", function(event) {
+$("form").on("submit", function(event) {
   event.preventDefault();
-  if ($("#my-text-input").val() == "") {
-    alert("You missed the field.");
+  if ($("#email").val() === "") {
+    alert("Thanks for submitting!.");
   } else {
-    alert("Thanks for filling the field!");
+    alert("You missed the field.");
   }
 });

@@ -480,16 +480,26 @@
     padding: 0;
     margin: 0;
   }
+
+  footer a:link,
+  footer a:visited  {
+    color: white;
+  }
+  footer a:hover {
+    color: #b64036;
+  }
 /*Footer*/
   .footer {
     display: flex;
     background-color: black;
     color: white;
     bottom: 0;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     overflow: hidden;
     position: relative;
+    flex-wrap: wrap;
+    text-align: center;
   }
 
   footer p,
@@ -497,11 +507,26 @@
     color: white;
   }
 
+  .flex-footer {
+    display: flex;
+    padding: 15px;
+  }
+
   .socials {
-    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
     flex-direction: row;
     padding: 20px;
     color: white;
+  } 
+  
+  .social-words {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .social-space {
+    margin: 10px;
   }
 
   .bottom-left {
@@ -514,6 +539,10 @@
   .address {
     color: #969696;
   }
+
+ 
+
+  
 
 /* Media Queries */
   @media screen and (min-width: 600px) {
@@ -556,10 +585,6 @@
     
     .mens {
       display: flex;
-      background-image: url("./images/mens-category.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
       height: 48%;
       width: 48%;
       max-width: 58%;
@@ -571,10 +596,6 @@
     
     .trends {
       display: flex;
-      background-image: url("./images/trends-category.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
       height: 48%;
       width: 23%;
       max-width: 23%;
@@ -586,10 +607,6 @@
     
     .glasses {
       display: flex;
-      background-image: url("./images/glasses-category.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
       height: 48%;
       width: 23%;
       max-width: 23%;
@@ -602,10 +619,6 @@
     
     .sale {
       display: flex;
-      background-image: url("./images/sale-category.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
       height: 48%;
       width: 23%;
       max-width: 23%;
@@ -619,10 +632,6 @@
     
     .bags {
       display: flex;
-      background-image: url("./images/bags-category.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
       height: 48%;
       width: 23%;
       max-width: 23%;
@@ -634,10 +643,6 @@
     
     .womens {
       display: flex;
-      background-image: url("./images/womens-category.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
       height: 48%;
       width: 48%;
       max-width: 48%;
@@ -650,7 +655,34 @@
   div.carousel-cell {
     width: 50%;
   }
-    
+
+  .footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    flex-wrap: nowrap;
+    text-align: start;
+  }
+
+  .flex-footer {
+    display: block;
+  }
+
+  .socials {
+    display: block;
+    flex-direction: row;
+    padding: 20px;
+    color: white;
+  }
+  .social-words {
+    visibility: visible;
+    position: relative;
+  }
 }
  @media screen and (min-width: 1240px) {
   div.carousel-cell {
