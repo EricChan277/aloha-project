@@ -266,7 +266,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     /* justify-content: space-between; */
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     height:auto;
     align-items: center;
@@ -286,8 +286,7 @@
     align-items: center;
     color: white;
     top: 0;
-    margin-top: 0px;
-    margin-bottom: 2px;
+    margin: 1%;
 
   }
 
@@ -298,12 +297,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     height: 200px;
-    width: 50%;
+    width: 48%;
     justify-content: center;
     align-items: center;
     color: white;
-    left: 0;
-    margin-left: 0px;
+    left: 0px;
+    margin: 1%;
 
   }
 
@@ -314,12 +313,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     height: 200px;
-    width: 50%;
+    width: 48%;
     justify-content: center;
     align-items: center;
     color: white;
     right: 0;
-
+    margin: 1%;
 
   }
 
@@ -330,11 +329,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     height: 200px;
-    width: 50%;
+    width: 48%;
     justify-content: center;
     align-items: center;
     color: white;
-
+    margin: 1%;
 
   }
 
@@ -345,11 +344,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     height: 200px;
-    width: 50%;
+    width: 48%;
     justify-content: center;
     align-items: center;
     color: white;
-
+    margin: 1%;
   }
 
   .womens {
@@ -363,6 +362,7 @@
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 1%;
   }
 
 
@@ -410,9 +410,8 @@
 
   }
 
-  .updates-div {
-    padding: 0 25% 0 25%;
-  }
+ 
+
   .updates h2 {
     text-align: center;
     justify-content: center;
@@ -576,7 +575,6 @@
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
-      background-color: red;
       width: 100%;
       height: 400px;
       align-items: center;
@@ -591,7 +589,7 @@
       justify-content: center;
       align-items: center;
       color: white;
-      margin: 0px 5px 5px 5px;
+      margin: 0px 3.5px;
     }
     
     .trends {
@@ -602,7 +600,7 @@
       justify-content: center;
       align-items: center;
       color: white;
-      margin: 0px 5px 5px 5px;
+      margin: 0px 3.5px;
     }
     
     .glasses {
@@ -613,7 +611,7 @@
       justify-content: center;
       align-items: center;
       color: white;
-      margin: 5px 0 5px 5px;
+      margin: 0px 3.5px;
     
     }
     
@@ -625,7 +623,7 @@
       justify-content: center;
       align-items: center;
       color: white;
-      margin: 5px 5px 0 0;
+      margin: 0px 3.5px;
     
     
     }
@@ -638,7 +636,7 @@
       justify-content: center;
       align-items: center;
       color: white;
-      margin: 5px;
+      margin: 0px 3.5px;
     }
     
     .womens {
@@ -649,8 +647,7 @@
       justify-content: center;
       align-items: center;
       color: white;
-      margin: 5px 5px 0 0;
-      margin-right: 0px;
+      margin: 0px 3.5px;
   }
   div.carousel-cell {
     width: 50%;
@@ -683,8 +680,11 @@
     visibility: visible;
     position: relative;
   }
+  .updates-div {
+    padding: 0 25% 0 25%;
+  }
 }
- @media screen and (min-width: 1240px) {
+@media screen and (min-width: 1240px) {
   div.carousel-cell {
     width: 25%;
   }
