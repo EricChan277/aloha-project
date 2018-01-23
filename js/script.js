@@ -45,11 +45,16 @@ $('.main-carousel').flickity({
   autoPlay: true
 });
 
-$("form").on("submit", function(event) {
-  event.preventDefault();
-  if ($("#email").val() === "") {
-    alert("Thanks for submitting!.");
+$("form").on("submit", function() {
+  var emailValue;
+  emailValue = $("input").val();
+
+  if($("#email").val()=="") {
+    alert("Please input a valid email.");
+    return false;
   } else {
-    alert("You missed the field.");
+    alert ("Thanks for subscribing!");
+    return false;
+
   }
-});
+  });
