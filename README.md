@@ -1,8 +1,7 @@
 # Aloha
-    Project link: https://ericchan277.github.io/aloha-project/
-    
-    Aloha
-    ![alt text](./aloha-project/images/aloha-logo.svg)
+Project link: https://ericchan277.github.io/aloha-project/
+Aloha
+![alt text](./aloha-project/images/aloha-logo.svg)
     
 
     What is Aloha?
