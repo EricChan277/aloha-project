@@ -264,12 +264,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: red;
     width: 100%;
-    height: 400px;
+    height:auto;
     align-items: center;
     justify-content: center;
+    margin: 1px;
   }
 
   .mens {
@@ -278,16 +279,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 48%;
-    width: 48%;
-    max-width: 58%;
+    height: 200px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 0px 5px 5px 5px;
-    /* margin-left: 0px; */
+    top: 0;
+    margin-top: 0px;
+    margin-bottom: 2px;
 
-    /* flex-shrink: 2; */
   }
 
   .trends {
@@ -296,13 +296,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 48%;
-    width: 23%;
-    max-width: 23%;
+    height: 200px;
+    width: 50%;
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 0px 5px 5px 5px;
+    left: 0;
+    margin-left: 0px;
+
   }
 
   .glasses {
@@ -311,14 +312,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 48%;
-    width: 23%;
-    max-width: 23%;
+    height: 200px;
+    width: 50%;
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 5px 0 5px 5px;
-    /* margin-right: 0px; */
+    right: 0;
+
+
   }
 
   .sale {
@@ -327,14 +328,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 48%;
-    width: 23%;
-    max-width: 23%;
+    height: 200px;
+    width: 50%;
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 5px 5px 0 0;
-    /* margin-left: 0px; */
+
 
   }
 
@@ -344,13 +343,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 48%;
-    width: 23%;
-    max-width: 23%;
+    height: 200px;
+    width: 50%;
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 5px;
+
   }
 
   .womens {
@@ -359,16 +357,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 48%;
-    width: 48%;
-    max-width: 48%;
+    height: 200px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 5px 5px 0 0;
-    margin-right: 0px;
-
-    /* flex-shrink: 2; */
   }
 
 
@@ -543,11 +536,119 @@
     .cart-wrapper {
       order:2 ;
     }
-  
+    .flex-clothes {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: red;
+      width: 100%;
+      height: 400px;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .mens {
+      display: flex;
+      background-image: url("./images/mens-category.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 48%;
+      width: 48%;
+      max-width: 58%;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin: 0px 5px 5px 5px;
+    }
+    
+    .trends {
+      display: flex;
+      background-image: url("./images/trends-category.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 48%;
+      width: 23%;
+      max-width: 23%;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin: 0px 5px 5px 5px;
+    }
+    
+    .glasses {
+      display: flex;
+      background-image: url("./images/glasses-category.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 48%;
+      width: 23%;
+      max-width: 23%;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin: 5px 0 5px 5px;
+    
+    }
+    
+    .sale {
+      display: flex;
+      background-image: url("./images/sale-category.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 48%;
+      width: 23%;
+      max-width: 23%;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin: 5px 5px 0 0;
+    
+    
+    }
+    
+    .bags {
+      display: flex;
+      background-image: url("./images/bags-category.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 48%;
+      width: 23%;
+      max-width: 23%;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin: 5px;
+    }
+    
+    .womens {
+      display: flex;
+      background-image: url("./images/womens-category.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 48%;
+      width: 48%;
+      max-width: 48%;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin: 5px 5px 0 0;
+      margin-right: 0px;
   }
     
  
  @media screen and (min-width: 1240px) {
-
- }
     
+
+
+}
+
+}
+    
+
