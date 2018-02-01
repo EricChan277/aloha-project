@@ -707,16 +707,12 @@
 
   @media screen and (min-width: 1240px) {
     .carousel-cell {
-    width: 25%;
-  }
-
-    /* .logo {
-      max-width: 10%;
-    } */
-
-
+      width: 25%;
+    }
   }
 
 
     
 
+
+  
