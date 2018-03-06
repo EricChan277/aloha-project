@@ -46,8 +46,6 @@ $('.main-carousel').flickity({
 });
 
 $("form").on("submit", function() {
-  var emailValue;
-  emailValue = $("input").val();
 
   if($("#email").val()=="") {
     alert("Please input a valid email.");
