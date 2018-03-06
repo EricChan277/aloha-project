@@ -61,15 +61,19 @@ h3 {
 }
 /*Nav bar */
 .nav-box {
+  position: fixed;
   display: flex;
   flex-direction: row;
   top: 0;
   align-items: center;
-  height: 150px;
+  height: 50px;
   width: 100%;
   flex-wrap: wrap;
   padding: 5px;
   justify-content: space-around;
+  z-index: 10;
+  background: hsla(0, 0%, 100%, .85);
+	border-bottom: 1px solid #e1e1e1;
 }
 .logo {
   align-items: flex-start;
@@ -316,6 +320,8 @@ h1 {
   padding: .5rem 1.75rem;
 }
 /*General Styling*/
+
+
 a:link {
   color: #e2574c;
   text-decoration: none;
@@ -336,6 +342,7 @@ ul {
 body {
   padding: 0;
   margin: 0;
+  padding-top: 50px;
 }
 /*Footer*/
 .footer {
@@ -397,7 +404,7 @@ footer a:hover {
   }
   .logo {
     order: 0;
-    max-width: 15%;
+    width: 15%;
   }
   .nav-buttons {
     display: flex;
@@ -411,6 +418,7 @@ footer a:hover {
   }
   .cart-wrapper {
     order: 2;
+    width: 15%;
   }
   .flex-clothes {
     display: flex;

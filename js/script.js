@@ -43,12 +43,12 @@ $('.main-carousel').flickity({
   autoPlay: true
 });
 //Email submit
-$("form").on("submit", function() {
+$("form").on("submit", function(submit) {
   if($("#email").val()=="") {
     alert("Please input a valid email.");
-    return false;
+    submit.preventDefault();
   } else {
     alert ("Thanks for subscribing!");
-    return false;
+    submit.preventDefault();
   }
   });
