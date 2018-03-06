@@ -34,9 +34,7 @@ $('a[href*="#"]')
       }
     }
   });
-
 //This is the flickity script
-
 $('.main-carousel').flickity({
   // options
   cellAlign: 'left',
@@ -44,15 +42,13 @@ $('.main-carousel').flickity({
   wrapAround: true,
   autoPlay: true
 });
-
+//Email submit
 $("form").on("submit", function() {
-
   if($("#email").val()=="") {
     alert("Please input a valid email.");
     return false;
   } else {
     alert ("Thanks for subscribing!");
     return false;
-
   }
   });
