@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="reset" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/flickity.css">
   <script src="https://use.fontawesome.com/833a98f580.js"></script>
@@ -20,18 +20,18 @@
     <img class="logo" src="./images/aloha-logo.svg" alt="logo">
     <div class="nav-buttons">
       <ul class="nav-bar">
-        <a href="#about">
-          <li> ABOUT </li>
-        </a>
-        <a href="#shop">
-          <li> SHOP </li>
-        </a>
-        <a href="#featured">
-          <li>FEATURED</li>
-        </a>
-        <a href="#updates">
-          <li>UPDATES</li>
-        </a>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#shop">Shop</a>
+        </li>
+        <li>
+          <a href="#featured">Featured</a>
+        </li>
+        <li>
+          <a href="#updates">Updates</a>
+        </li>
       </ul>
     </div>
     <div class="cart-wrapper">
@@ -40,10 +40,10 @@
   </nav>
   <!-- Banner -->
   <section class="spring-summer">
-    <div class="collection">
-      <p class="banner-text">NEW COLLECTION</p>
-      <p class="headers">Spring/Summer 2016</p>
-    </div>
+    <header class="collection">
+      <h2 class="banner-text">New Collection</h2>
+      <h2 class="headers">Spring/Summer 2016</h2>
+    </header>
   </section>
   <!-- Info -->
   <section class="about" id="about">
@@ -60,68 +60,69 @@
   </section>
   <!-- Shop -->
   <section class="flex-clothes" id="shop">
-    <p class="mens shop-words">MENS</p>
-    <p class="trends shop-words">TRENDS</p>
-    <p class="glasses shop-words">GLASSES</p>
-    <p class="sale shop-words">SALE
-      <p class="bags shop-words">BAGS</p>
-      <p class="womens shop-words">WOMEN'S</p>
+    <h3 class="mens shop-words">Mens</h3>
+    <h3 class="trends shop-words">Trends</h3>
+    <h3 class="glasses shop-words">Glasses</h3>
+    <h3 class="sale shop-words">Sale</h3>
+    <h3 class="bags shop-words">Bags</h3>
+    <h3 class="womens shop-words">Women's</h3>
   </section>
   <!-- Featured -->
   <section id="featured" class="carasol">
     <header class="headers">
-    <h2 class="italicize">Most Loved</h2>
-    <h2>Products</h2>
+      <h2 class="italicize">Most Loved</h2>
+      <h2>Products</h2>
     </header>
     <div class="main-carousel">
       <div class="carousel-cell">
         <img class="carasol-pics" src="./images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
-        <p>Dresses</p>
+        <p class="clothes-catagories">Dresses</p>
         <h3>Stretch Knit Dress</h3>
         <p>$169.00</p>
       </div>
       <div class="carousel-cell">
         <img class="carasol-pics" src="./images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
-        <p>SHIRTS</p>
+        <p class="clothes-catagories">Shirts</p>
         <h3>Cotton Blue Shirt</h3>
         <p>$89.00</p>
       </div>
       <div class="carousel-cell">
         <img class="carasol-pics" src="./images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
-        <p>DRESSES</p>
+        <p class="clothes-catagories">Dresses</p>
         <h3>Checked Stretch Dress</h3>
         <p>$129.00</p>
       </div>
       <div class="carousel-cell">
         <img class="carasol-pics" src="./images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
-        <p>BAGS</p>
+        <p class="clothes-catagories">Bags</p>
         <h3>Blue Hipster Backpack</h3>
         <p>$69.00</p>
       </div>
       <div class="carousel-cell">
         <img class="carasol-pics" src="./images/demin-overall-shorts.jpg" alt="Denim Overall Shorts">
-        <p>DENIM</p>
+        <p class="clothes-catagories">Denim</p>
         <h3>Denim Overalls</h3>
         <p>$89.00</p>
       </div>
       <div class="carousel-cell">
         <img class="carasol-pics" src="./images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
-        <p>DRESSES</p>
+        <p class="clothes-catagories">Dresses</p>
         <h3>Pink Dotted Dress</h3>
         <p>$99.00</p>
       </div>
       <div class="carousel-cell">
         <img class="carasol-pics" src="./images/blue-silk-dress.jpg" alt="Blue Silk Dress">
-        <p>DRESSES</p>
+        <p class="clothes-catagories">Dresses</p>
         <h3>Blue Silk Dress</h3>
         <p>$119.00</p>
       </div>
       <div class="carousel-cell">
         <img class="carasol-pics" src="./images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow T-Shirt">
-        <p>SHIRTS</p>
+        <p class="clothes-catagories">Shirts</p>
         <h3>Cotton Yellow Tshirt</h3>
         <p>$39.00</p>
       </div>
+    </div>
   </section>
   <!-- Updates -->
   <section class="updates" id="updates">
@@ -139,23 +140,18 @@
   </section>
   <!-- Footer -->
   <footer class="footer">
-
-    <section class="contact-info">
+    <div class="contact-info">
       <!-- Contact Information -->
+      <p> © 2017 Aloha Apparel Co.</p>
+      <p> Powered by HTML and CSS.</p>
+      <p> 604-604-6040.</p>
       <p>
-        © 2017 Aloha Apparel Co.
-        <br/>Powered by HTML and CSS.
-        <br/>
-        <br/> 604-604-6040.
         <a href="info@alohaapparel.com" target="_blank">info@alohaapparel.com</a>
-        <br/>
       </p>
-      <p class="address">
-        <br/> 1490 W Broadway
-        <br/> Vancouver, BC, Canada
-      </p>
-    </section>
-    <socials class="socials">
+      <p class="address"> 1490 W Broadway
+        <br/> Vancouver, BC, Canada</p>
+    </div>
+    <div class="socials">
       <!-- Social links -->
       <ul class="social-list">
         <li class="social-space">
@@ -194,7 +190,7 @@
           <br />
         </li>
       </ul>
-    </socials>
+    </div>
   </footer>
   <!-- Scripts -->
   <script src="./js/tota11y.min.js"></script>

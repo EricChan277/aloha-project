@@ -58,6 +58,7 @@ h3 {
 }
 .shop-words {
   font-size: 2rem;
+  text-transform: uppercase;
 }
 /*Nav bar */
 .nav-box {
@@ -73,7 +74,8 @@ h3 {
   justify-content: space-around;
   z-index: 10;
   background: hsla(0, 0%, 100%, .85);
-	border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  text-transform: uppercase;
 }
 .logo {
   align-items: flex-start;
@@ -110,7 +112,6 @@ h1 {
 }
 .cart {
   max-width: 50px;
-  max-height: auto;
   justify-content: flex-end;
   align-items: flex-end;
   order: 1;
@@ -141,7 +142,6 @@ h1 {
 .catagories {
   display: flex;
   max-height: 200px;
-  max-width: auto;
 }
 /*Info*/
 .container {
@@ -270,6 +270,11 @@ h1 {
 .carousel-cell {
   width: 100%;
 }
+
+.clothes-catagories {
+  text-transform: uppercase;
+}
+
 /*Updates*/
 .updates {
   display: flex;
@@ -358,7 +363,7 @@ body {
   text-align: center;
 }
 footer p,
-footer ul,
+footer ul
   {
   color: white;
 }
@@ -385,8 +390,14 @@ footer ul,
   flex-direction: column;
   padding: 20px;
   color: white;
+  margin: 0px;
+}
+
+.contact-info p{
+  margin: 0px;
 }
 .address {
+  margin-top: 20px;
   color: #969696;
 }
 footer a:link,
